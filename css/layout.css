@@ -1,0 +1,350 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+body {
+  background-color: #fffbea;
+}
+/*.front_section{
+  background-image: url("../img/butik_drawing.png");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+
+}*/
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.h1_forside {
+  position: relative;
+  left: 35%;
+  top: 2vw;
+}
+.col_center {
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+/*---------Fjerne boksen omkring knappen, give den størrelse og positionere menu knappen----*/
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+button img {
+  width: 300%;
+}
+.menuFoside_knap {
+  position: relative;
+  top: 5vh;
+}
+
+.virksomhed_btn {
+  width: 25%;
+  position: relative;
+  top: 3vh;
+  left: 15vh;
+}
+.tilbage_btn {
+  width: 3%;
+  position: relative;
+  top: 2vh;
+  left: 2vh;
+}
+
+section {
+  overflow: hidden;
+}
+
+.bak_contack {
+  right: 17vh;
+  top: 3.5vh;
+  position: relative;
+}
+.img_forside {
+  position: relative;
+  width: 85vw;
+  height: 100vh;
+  left: 14vh;
+  top: 4vh;
+  z-index: -1;
+  display: block;
+}
+
+.kontakt_tekst {
+  top: 3vw;
+  position: relative;
+}
+
+.tekst_mellemrum {
+  position: relative;
+  top: 1.5vw;
+}
+
+.menu_afstand h2 {
+  position: relative;
+  top: 5vw;
+  grid-column: 2;
+}
+
+.menu_afstand :nth-child(2) {
+  position: relative;
+
+  grid-column: 1/-1;
+}
+
+.menu_afstand :nth-child(3) {
+  position: relative;
+  top: 2vw;
+  grid-column: 1/-1;
+}
+
+.menu_afstand :nth-child(4) {
+  position: relative;
+  top: 2vw;
+  grid-column: 1/-1;
+}
+
+.menu_afstand .tekst_knap_p {
+  grid-template-columns: 2;
+}
+
+.menu_afstand .tekst_knap_p button {
+  position: relative;
+  left: 42%;
+}
+
+.menu_afstand :nth-child(5) {
+  position: absolute;
+  top: 1760px;
+}
+
+.menu_afstand :nth-child(6) {
+  left: 70%;
+  position: absolute;
+}
+
+.grøntsager_tegning {
+  position: absolute;
+  left: 75%;
+  top: 123rem;
+}
+
+.map_side .mapFirst_h2 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.map_side h2 {
+  position: relative;
+  top: 20%;
+}
+.map_side ol,
+iframe {
+  position: relative;
+  bottom: 40%;
+}
+.map_side ol {
+  grid-column: 1;
+  grid-row: 2;
+}
+.col_row {
+  display: flex;
+  justify-content: space-evenly;
+}
+.col_down {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.col_downD{
+  display: flex;
+  flex-direction: column;
+}
+.col_row_space {
+  display: flex;
+  justify-content: space-around;
+}
+.footer_tekst {
+  position: relative;
+  top: 10%;
+  line-height: 2em;
+}
+
+.top_spacing {
+  position: relative;
+  top: 5vw;
+}
+.top_spacing2 {
+  position: relative;
+  top: 7vw;
+}
+
+.top_spacing_h1 {
+  position: relative;
+  top: 3vw;
+}
+
+.menu_design h2 {
+  position: relative;
+  left: 25vh;
+}
+.menu_design div {
+  position: relative;
+  left: 25vh;
+  top: 1vh;
+}
+.menu_section1 {
+  position: relative;
+  top: 2vh;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 0vh;
+  margin-bottom: 3vh;
+}
+.menu_section1 div {
+  position: relative;
+  padding: 0.4rem;
+}
+.menu_section2 {
+  position: relative;
+  top: -1vh;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5vh;
+  margin-bottom: 3vh;
+}
+.menu_section2 {
+  position: relative;
+  top: -1vh;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5vh;
+  margin-bottom: 3vh;
+}
+.menu_section2 div {
+  position: relative;
+  padding: 0.4rem;
+}
+.menu_section3 {
+  position: relative;
+  bottom: 4vh;
+  width: 100%;
+  height: 40vh;
+ 
+}
+
+.menu_section3 div p {
+  position: relative;
+  padding: 0.5rem;
+}
+#body_menu footer {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+  top: 30vh;
+}
+
+
+#menu_main .menu_boks div {
+  overflow: hidden;
+}
+
+.menu_sandwich1 {
+  position: absolute;
+}
+/* .lined_thin{
+    position: relative;
+    left: 5vh;
+    top: 3vh;
+} */
+.tapas_grid {
+  grid-column: 1/-1;
+}
+
+.menu_section2Tapas {
+  position: relative;
+  top: -1vh;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5vh;
+  margin-bottom: 3vh;
+}
+.menu_section1Tapas {
+  position: relative;
+  top: -1vh;
+  width: 100%;
+  height: 50vh;
+  padding-bottom: 5vh;
+  margin-bottom: 3vh;
+}
+
+.aboutUsimg1{
+  grid-column: 1/-1;
+  
+}
+.aboutUsimg2{
+  grid-column: 1/-1;
+  grid-row: 2;
+}
+.godeSunde_tekst p{
+  top: 4vh;
+}
+.godeSunde_tekst{
+  top: 2vh;
+}
+#aboutUsMain{
+  position: relative;
+  top: 10vh;
+}
+
+.omUs_h1{
+  position: relative;
+  top: 15vh;
+  left: 20vh;
+}
+.citron_img{
+  position: absolute;
+  width: 30%;
+  left: 40vh;
+  
+  top: 44vh;
+  rotate: 20deg;
+}
+.aboutUsimg1 p{
+  position: relative;
+  top: 10vh;
+  left: 5vh;
+}
+.left_img{
+  position: relative;
+  left: 5vh;
+}
+.om_osKnap{
+  position: relative;
+  z-index: 3;
+  bottom: 240vh;
+}
+
+.om_osKnap h2{
+  color: #fffbea;
+  font-size: 5rem;
+}
+
+.knap_os{
+  position: relative;
+  left: 75vh;
+  top: 15vh;
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Bak's sandwich</title>
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+</head>
+
+<body>
+  <header>
+    <div class="burger-menu" id="burger-menu">
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#startSide">Forside</a></li>
+          <li><a href="#contactSide">Virksomhedsaftale</a></li>
+          <li><a href="#menuSide">Menu</a></li>
+          <li><a href="#aboutUsSide">Om os</a></li>
+        </ul>
+      </nav>
+    </div>
+    <button onclick="scrollToTop()" id="scrollToTopBtn" class="scrollToTopBtn1" title="Go to Top">^</button>
+  </header>
+  <main>
+    <section id="startSide" class="front_section">
+      <div>
+        <h1 class="h1_forside">BAK SANDWICH</h1>
+        <img class="img_forside" src="./img/butik_drawing.png" alt="" />
+      </div>
+    </section>
+    <section id="contactSide" class="contact_section">
+      <div class="col_center blue_bg_tekst">
+        <div>
+          <h2 class="bak_contack contact_h2">BAK</h2>
+          <h2 class="contact_h2">SANDWICH</h2>
+          <div class="tekst_mellemrum">
+            <p>
+              Bak Sandwichshop er en frokostforretning som ligger midt på
+              <br />
+              Stor Kongensgade 54 i kælderen.
+            </p>
+          </div>
+        </div>
+        <div class="kontakt_tekst">
+          <h3>KONTAKT</h3>
+          <div class="tekst_mellemrum">
+            <p>Telefon: 30 11 30 41</p>
+            <p>E-mail: kontakt@baksandwich.dk</p>
+            <button class="virksomhed_btn col_center" class="lined_thin_forside_blueBg"
+              onclick="window.location.href='virksomhedsaftale.html'">
+              <img src="./img/SVG/virksomhedsaftale_.svg" alt="virksomhedsaftale" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="menuSide" class="menu_section">
+      <div class="menu_afstand grid_1-1-1">
+        <h2>MENU</h2>
+        <p>
+          Vores mange forskellige sandwich, velkomponerede salater og kager
+          bliver <br />
+          tilberedt fra bunden og bliver løbende skiftet ud efter årstid og
+          sæson. <br />
+          friskhed og velsmag er omdrejningspunktet for vores udvalg og vores
+          tilgang <br />
+          til håndværket.
+        </p>
+        <p>
+          Alle vores sandwich og salater blive lavet direkte ved din
+          bestilling. <br />på den måde får du altid en sprød og frisk frokost
+          som du enten kan nyde i vores <br />
+          forretning eller som take-away.
+        </p>
+        <div class="tekst_knap_p">
+          <p>
+            Bestil gerne din frokost på 30113041, så undgår du
+            ventetid......Bon Appètit.
+          </p>
+          <button class="menuFoside_knap" class="lined_thin_forside" onclick="window.location.href='menu.html'">
+            <img src="./img/menu.svg" alt="Menu knap" />
+          </button>
+        </div>
+
+        <img class="flasker_tegning" src="./img/flasker_drawing.png" alt="To flasker, som ikke indholder noget" />
+        <img class="sandwich_tegning" src="./img/sanwich_drawing.png" alt="En trekantet sandwich med salat og skinke" />
+        <img class="grøntsager_tegning" src="./img/grøntsager_.png"
+          alt="En bunke grøntsager som er tegnet i blå farve" />
+      </div>
+    </section>
+    <section id="aboutUsSide" class="aboutUs_section">
+      <div class="video-container">
+        <video id="backgroundVideo" loop muted autoplay>
+          <source src="./video/lilleVideo.mp4" type="video/mp4">
+
+        </video>
+        <div class="om_osKnap">
+          <h2>BAK's Sandwich</h2>
+          <button class="lined_thin_forside knap_os" onclick="window.location.href='aboutUs.html'">
+            <img src="./img/om_os.svg" alt="Om os knap" />
+          </button>
+        </div>
+    </section>
+    <section class="map_section">
+      <div class="grid_1-1 map_side">
+        <h2 class="mapFirst_h2">Åbningstider</h2>
+        <ol>
+          <li>Mandag: 08-16</li>
+          <li>Tirsdag: 08-16</li>
+          <li>Onsdag: 08-16</li>
+          <li>Torsdag: 08-16</li>
+          <li>Fredag: 08-16</li>
+          <li>Lørdag: Efter aftale</li>
+          <li>Søndag: Lukket</li>
+        </ol>
+        <h2>Find os</h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d8997.271307222638!2d12.587143!3d55.6834619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525318f467b143%3A0x90885e81003b9493!2sBak!5e0!3m2!1sda!2sdk!4v1702122803569!5m2!1sda!2sdk"
+          width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="col_row">
+    <div class="bak_logo footer_tekst">
+      <img src="./img/bak_hvidLogo.svg" alt="" />
+    </div>
+
+    <div class="col_column footer_tekst">
+      <p>St. Kongensgade 54</p>
+      <p>1264 København K</p>
+    </div>
+    <div class="col_column footer_tekst">
+      <p>Telefon: 30 11 30 41</p>
+      <p>E-mail: kontakt@baksandwich.dk</p>
+    </div>
+  </footer>
+  <script src="js/login.js"></script>
+  <script src="js/burgerMenu.js"></script>
+</body>
+
+</html>
