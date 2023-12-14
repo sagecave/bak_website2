@@ -62,7 +62,7 @@ window.onscroll = function () {
 };
 
 function toggleScrollTopButton() {
-    var button = document.getElementById('scrollToTopBtn');
+    let button = document.getElementById('scrollToTopBtn');
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         button.style.display = 'block';
     } else {

@@ -24,6 +24,11 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+.grid_1-1_1-1-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 
 .h1_forside {
   position: relative;
@@ -347,4 +352,10 @@ iframe {
   position: relative;
   left: 75vh;
   top: 15vh;
+}
+#stor_video {
+  position: relative;
+  top: 3vh;
+  
+
 }
