@@ -80,6 +80,7 @@ class Login extends HTMLElement {
           <p>This is a school project</p>
           <p>The password is <code>kea</code></p>
           <form>
+            <input type="text" name="username" placeholder="Username">
             <input type="password" name="pass" placeholder="Password">
             <input type="submit" name="login" class="login loginmodal-submit" value="Login">
           </form>
@@ -91,13 +92,25 @@ class Login extends HTMLElement {
  
     this.shadowRoot.querySelector("form").addEventListener("submit", e => {
       e.preventDefault();
-      if (this.shadowRoot.querySelector("input[name=pass]").value === "kea") {
+      
+      const usernameInput = this.shadowRoot.querySelector("input[name=username]");
+      const passwordInput = this.shadowRoot.querySelector("input[name=pass]");
+    
+      const enteredUsername = usernameInput.value;
+      const enteredPassword = passwordInput.value;
+    
+      // Check if both username and password are correct
+      if (enteredUsername === "kea" && enteredPassword === "kea") {
         // Reset the login state
         localStorage.removeItem("iform-totally-logged-in");
         // Remove the login modal
         document.querySelector("#totally-delete-me").remove();
+      } else {
+        // Provide feedback that the login is unsuccessful (optional)
+        alert("Invalid username or password. Please try again.");
       }
     });
+    
     
   }
   render() {

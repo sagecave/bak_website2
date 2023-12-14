@@ -359,3 +359,11 @@ iframe {
   
 
 }
+
+.salat_pic{
+  position: absolute;
+  width: 40%;
+  left: 55%;
+  bottom: 5%;
+  opacity: 35%;
+}
